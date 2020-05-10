@@ -2,14 +2,13 @@ from PIL import Image
 from mp4toimages import splitvideotoframes
 import os
 currentframe = "frame0.jpg"
-splitvideotoframes('movie.mp4')
+splitvideotoframes(input('Please write the file name e.g. "example.mp4"'))
 count = 0
 # fuck you dont read my code slut
 while True:
     try:
         im = Image.open(currentframe)
     except:
-        print("DONE")
         exit() 
     im = Image.open(currentframe)
     pixels = list(im.getdata())
@@ -37,7 +36,6 @@ while True:
     count += 1
     os.remove(currentframe)
     currentframe  = "frame%d.jpg" % count
-    print(Averagedrgb, currentframe, count)
-
+    print(Averagedrgb, currentframe)
 
 #print(list(pixels[int(halfofimage)])+1)

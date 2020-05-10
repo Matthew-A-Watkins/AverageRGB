@@ -2,7 +2,7 @@ from PIL import Image
 from mp4toimages import splitvideotoframes
 import os
 currentframe = "frame0.jpg"
-splitvideotoframes(input('Please write the file name e.g. "example.mp4"'))
+splitvideotoframes(input('Please write the file name e.g. "example.mp4" '))
 count = 0
 # fuck you dont read my code slut
 while True:

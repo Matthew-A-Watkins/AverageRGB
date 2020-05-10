@@ -34,8 +34,9 @@ while True:
 
     Averagedrgb = (totalr, totalb, totalg)
     count += 1
+    print(Averagedrgb, currentframe)
     os.remove(currentframe)
     currentframe  = "frame%d.jpg" % count
-    print(Averagedrgb, currentframe)
+    
 
 #print(list(pixels[int(halfofimage)])+1)

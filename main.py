@@ -4,6 +4,7 @@ import os
 currentframe = "frame0.jpg"
 splitvideotoframes('movie.mp4')
 count = 0
+# fuck you dont read my code slut
 while True:
     try:
         im = Image.open(currentframe)

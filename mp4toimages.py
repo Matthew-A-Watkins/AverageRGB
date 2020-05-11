@@ -1,6 +1,5 @@
 import cv2
 
-print(cv2.__version__)
 def splitvideotoframes(filename):
   try:
     vidcap = cv2.VideoCapture(str(filename))
